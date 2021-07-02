@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+section {
+  padding: 130px 80px;
+  height: 100wh;
+  position: relative;
+}
+
+h1 {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 160px;
+  text-align: center;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 90px;
+  color: #666;
+  text-align: right;
+  margin: 0;
+}
+
+main a {
+  font-family: "Fjalla One", sans-serif;
+}
+
+article a,
+footer a {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+/* HEADER*/
+
+header p:first-of-type {
+  text-align: center;
+}
+
+header h2 {
+  text-align: center;
+  font-weight: 600;
+}
+header h2:first-of-type {
+  margin-bottom: 0;
+}
+header h2:last-of-type {
+  margin-top: 0;
+}
+/* Header Image */
+
+header img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Background Image */
+main section:first-of-type {
+  background: rgb(0, 0, 0, 0.7) url("../img/portfolio2.jpg") center/cover
+    no-repeat;
+}
+main section:nth-child(2) {
+  background: url("../img/portfolio3.png") center/cover no-repeat;
+}
+main section:nth-child(3) {
+  background: rgb(0, 0, 0, 0.7) url("../img/portfolio4.jpg") center/cover
+    no-repeat;
+}
+main section:last-of-type {
+  background: url("../img/portfolio5.png") center/cover no-repeat;
+}
+
+main section:nth-child(2n + 1) h2 {
+  color: white;
+}
+
+/*SECTIONS ODD*/
+main section:nth-child(2n + 1) a {
+  font-size: 10px;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+}
+main section:nth-child(2n + 1) a:hover {
+  background-color: white;
+  color: black;
+}
+main section:nth-child(2n + 1) a:hover ~ h3 {
+  color: white;
+}
+
+/*SECTIONS EVEN*/
+main section:nth-child(2n) a {
+  font-size: 10px;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+main section:nth-child(2n) a:hover {
+  background-color: black;
+  color: white;
+}
+main section:nth-child(2n) a:hover ~ h3 {
+  color: black;
+}
+
+.white {
+  color: white;
+  font-size: 7px;
+}
+
+.black {
+  color: black;
+  font-size: 7px;
+}
+
+section p {
+  display: block;
+  position: absolute;
+  margin-top: 45px;
+  font-weight: 60px;
+}
+
+section p:before {
+  content: "--";
+}
+
+/*** ARTICLE TAG ***/
+
+article {
+  background-color: black;
+  padding: 150px 100px 100px 100px;
+}
+
+/* ARTICLE ANCHOR für MAIL and HOVER */
+article a {
+  color: white;
+  font-size: 30px;
+}
+article a:hover {
+  text-decoration: underline;
+}
+
+/* ARTICLE HEADLINE h2*/
+article h2 {
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  margin-top: 0;
+}
+/* ARTICLE paragraph p */
+article p {
+  color: white;
+  width: 40%;
+  margin-left: auto;
+  line-height: 22px;
+  font-weight: bolder;
+  font-weight: 400;
+  padding-bottom: 50px;
+  font-size: 22px;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 1px;
+}
+/*FOOTER*/
+footer {
+  padding: 180px 50px 20px 50px;
+}
+footer a {
+  display: block;
+  font-size: 100px;
+  color: black;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
